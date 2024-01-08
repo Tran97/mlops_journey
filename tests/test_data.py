@@ -1,4 +1,4 @@
-from mlops.data.make_dataset import mnist
+from data.make_dataset import mnist
 from tests import _PATH_DATA
 import os.path
 import pytest
