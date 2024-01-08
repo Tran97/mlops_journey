@@ -3,7 +3,7 @@ from tests import _PATH_DATA
 import os.path
 import pytest
 
-@pytest.mark.skipif(not os.path.exists(_PATH_DATA+"1"), reason="Data files not found")
+@pytest.mark.skipif(not os.path.exists(_PATH_DATA), reason="Data files not found")
 def test_data():
     dataset = mnist(_PATH_DATA)
     train_tensor, test_tensor = dataset
