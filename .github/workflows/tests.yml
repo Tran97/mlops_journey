@@ -7,7 +7,7 @@ on:
     branches: [ master, main ]
 
 jobs:
-  build:
+  build_project:
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
