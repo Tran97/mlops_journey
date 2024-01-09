@@ -1,4 +1,7 @@
 [core]
-    remote = storage
+    remote = remote_storage
 ['remote "storage"']
     url = gdrive://1cx606C0BtS56oytGyYLkGYeYOO1xycpC
+['remote "remote_storage"']
+    url = gs://exercise_bucket-1/
+    version_aware = true
