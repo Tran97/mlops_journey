@@ -1,6 +1,6 @@
 # mlops
 
-Learning MLOps
+Learning MLOps :)
 
 ## Project structure
 
