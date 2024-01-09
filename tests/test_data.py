@@ -1,4 +1,4 @@
-from data.make_dataset import mnist
+from make_dataset import mnist
 from tests import _PATH_DATA
 import os.path
 import pytest
@@ -11,6 +11,6 @@ def test_data():
     test_data = test_tensor[:][0]
     N_train = len(train_data)
     N_test = len(test_data)
-    assert len(dataset[1]) == N_train, "Dataset did not have the correct number of samples"
+    assert len(dataset[0]) == N_train, "Dataset did not have the correct number of samples"
     assert len(dataset[1]) == N_test, "Dataset did not have the correct number of samples"
     assert all([data_point.shape == (1,28,28) for data_point in train_data]), "Datapoints does not have the correct shape"
